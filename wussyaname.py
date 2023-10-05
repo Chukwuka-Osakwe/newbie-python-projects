@@ -7,10 +7,12 @@ listOfNames = []
 
 def prettyPrint():
   '''
-  This function prints out the list of names. The counter is initialised to 1 and used for ordering the list. A for loop is used to iterate over each item in the list (as well as incrementing the counter each time) and each one is printed out using f strings.
+  This function prints out the list of names. The counter is initialised to 1 and used for ordering the list. 
+  A for loop is used to iterate over each item in the list (as well as incrementing the counter each time) and each one is printed out using f strings.
   '''
   counter = 1
   print("\33[35m" + "LIST OF NAMES" + "\33[0m")
+  listOfNames.sort()
   for name in listOfNames:
     print(f"{counter}. {name} \n")
     counter+=1
